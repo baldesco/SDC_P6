@@ -20,7 +20,7 @@ This project has two main criteria to determine if the implementation of the par
 1. Accuracy: The particle filter should localize vehicle position and yaw to within the values specified in the parameters `max_translation_error` and `max_yaw_error` in `src/main.cpp`.
 2. Performance: The particle filter should complete execution within the time of 100 seconds.
 
-If everything is ok, the simulator outputs the following message:
+If everything is ok, the simulator should output the following message:
 
 ```
 Success! Your particle filter passed!
