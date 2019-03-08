@@ -93,7 +93,7 @@ void ParticleFilter::prediction(double delta_t, double std_pos[],
     Particle p = particles[i];
     float xf, yf, thetaf;
     // The motion model equations depend on the yaw rate (zero or non-zero)
-    if (yaw_rate==0){
+    if (abs(yaw_rate)<=1e-5){
       thetaf = p.theta;
       xf = p.x + velocity*delta_t*cos(thetaf);
       yf = p.y + velocity*delta_t*sin(thetaf);
